@@ -1,0 +1,453 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,fieldset,legend,img,select {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    position: relative;
+}
+
+section,nav,header,footer,aside {
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+strong,b {
+    font-weight: normal;
+}
+
+i,em {
+    font-style: normal;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+
+.container .row .logn-pic img {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 375px;
+    height: 100%;
+    bottom: 0;
+}
+
+.container .row .logn-text {
+    margin-left: 375px;
+    height: 100%;
+}
+
+.container .row .logn-text .zc-head {
+    height: 80px;
+    width: 1143px;
+    margin-left: -260px;
+}
+
+.container .row .logn-text .zc-head .zc-logo {
+    float: left;
+}
+
+.container .row .logn-text .zc-head .zc-logo img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.container .row .logn-text .zc-head .zc-logo span {
+    display: block;
+    margin-top: 24px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+    float: left;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r {
+    float: right;
+    margin-right: 20px;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r ul {
+    display: block;
+    line-height: 80px;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r ul li {
+    float: left;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r ul li a:hover {
+    color: #ff5c00;
+}
+
+.container .row .logn-text .zc-head .zc-nav-r ul span {
+    float: left;
+    color: gainsboro;
+}
+
+.container .row .logn-text .zc-middle .zc-card {
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 40px 45px;
+    position: relative;
+    margin-bottom: 100px;
+    min-width: 450px;
+    box-shadow: 0 20px 50px 0 hsla(0, 0%, 63.5%, 0.1);
+    width: 450px;
+    height: 640px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .code {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.4;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-color: #ff5c00 #ff5c00 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 32px;
+    background-size: cover;
+}
+
+.container .row .logn-text .zc-middle .zc-card .code span {
+    position: absolute;
+    font-size: 36px;
+    top: -5px;
+    color: white;
+    right: -23px;
+    display: inline-block;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container .row .logn-text .zc-middle .zc-card .code:hover {
+    opacity: 1;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner {
+    margin: 10px 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner p {
+    font-size: 12px;
+    color: #f15a59;
+    margin-top: 8px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .log-zc-tab {
+    margin-bottom: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .log-zc-tab a:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 4px solid #ff5c00;
+    margin-right: 8px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .log-zc-tab a:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(224, 222, 222, 0.63);
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big {
+    width: 356px;
+    height: 61px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big h3 {
+    font-size: 12px;
+    color: #dfa6a6;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .area {
+    cursor: pointer;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .area p {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .area span {
+    float: right;
+    width: 41px;
+    text-align: center;
+    font-size: 18px;
+    color: gainsboro;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big {
+    width: 353px;
+    height: 53px;
+    border-radius: 5px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .phone {
+    width: 356px;
+    height: 61px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .phone .num {
+    text-align: left;
+    float: left;
+    border-right: 1px solid #ece2e2;
+    height: 53px;
+    width: 141px;
+    line-height: 61px;
+    cursor: pointer;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .phone .num p {
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .phone input {
+    float: left;
+    width: 212px;
+    height: 55px;
+    padding-left: 10px;
+    color: #9d9d9d;
+    background-color: #f9f9f9;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big {
+    width: 356px;
+    height: 61px;
+    border-radius: 5px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .info-code {
+    float: left;
+    width: 292px;
+    width: 248px;
+    height: 55px;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .box-big .get-code {
+    outline: none;
+    padding: 0;
+    float: right;
+    width: 101px;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 56px;
+    margin: 0;
+    border-radius: 0;
+    color: #aabe7e;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom input {
+    width: 328px;
+    height: 60px;
+    background-color: #fcf2f3;
+    color: #f04e4d;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom input:active {
+    box-shadow: 0 0 10px #fd945b;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .pwd {
+    position: relative;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .pwd .eye span:nth-of-type(1) {
+    position: absolute;
+    right: 30px;
+    top: 22px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .pwd .eye span:nth-of-type(2) {
+    position: absolute;
+    right: 30px;
+    top: 22px;
+    opacity: 0;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .pwd .eye:active span:nth-of-type(2) {
+    opacity: 1;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom button {
+    width: 100%;
+    height: 60px;
+    background-color: #ffbd98;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom button:active {
+    opacity: 0.5;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .forget {
+    margin-top: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .forget a:nth-of-type(1) {
+    float: left;
+    font-size: 18px;
+    color: #ff6915;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .forget a:nth-of-type(2) {
+    float: right;
+    font-size: 18px;
+    color: #ff6915;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .agree {
+    text-align: center;
+    font-size: 14px;
+    color: #9d9d9d;
+    margin-top: 44px;
+    cursor: pointer;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .agree a {
+    color: #333;
+    font-weight: bold;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom p:nth-of-type(3) {
+    font-size: 18px;
+    color: #acacac;
+    clear: both;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .otherway {
+    font-size: 18px;
+    color: #acacac;
+    clear: both;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .method {
+    height: 60px;
+    width: 270px;
+    margin: auto;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .method a {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container .row .logn-text .zc-middle .zc-card .zc-inner .inner-bottom .method a img {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+}
+
+.container .row .logn-text .mi-copyright {
+    padding: 0 20px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: -30px;
+    bottom: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+.container .row .logn-text .mi-copyright a {
+    color: #999;
+}
+
+.ban-xing {
+    width: 450px;
+    margin: auto;
+}

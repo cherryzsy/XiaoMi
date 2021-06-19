@@ -1,0 +1,9 @@
+.table{
+    width:800px;
+    margin-left: 200px;
+    font-size: 16px;
+}
+.table th{
+    background-color: #fff;
+    font-size: 16px;
+}

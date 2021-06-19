@@ -1,0 +1,254 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,fieldset,legend,img,select {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none !important;
+}
+img {
+    display: block;
+    border: 0;
+}
+body {
+    font-size: 12px;
+    position: relative;
+}
+
+section,nav,header,footer,aside {
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+strong,b {
+    font-weight: normal;
+}
+
+i,em {
+    font-style: normal;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.wrapper .wrap {
+    margin: auto;
+    width: 854px;
+}
+
+.wrapper .wrap .zc-info {
+    position: relative;
+    width: 854px;
+    height: 563px;
+    background-color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.wrapper .wrap .zc-info .zc-logo img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+}
+
+.wrapper .wrap .zc-info .wen-hao {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    border: 1px solid #302727;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.wrapper .wrap .zc-info .wen-hao a {
+    display: block;
+    color: #302727;
+    font-size: 14px;
+}
+
+.wrapper .wrap .zc-info h4 {
+    margin: auto;
+    font-size: 30px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.wrapper .wrap .zc-info .into {
+    text-align: left;
+    margin: auto;
+    width: 320px;
+}
+
+.wrapper .wrap .zc-info .into .area {
+    border: 1px solid #ece2e2;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wrapper .wrap .zc-info .into .area p {
+    display: inline-block;
+    height: 41px;
+    line-height: 41px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.wrapper .wrap .zc-info .into .area span {
+    float: right;
+    height: 41px;
+    width: 41px;
+    border-left: 1px solid #ece2e2;
+    line-height: 41px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wrapper .wrap .zc-info .into .area-tips {
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 15px;
+}
+
+.wrapper .wrap .zc-info .into .phone {
+    border: 1px solid #ece2e2;
+    height: 41px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wrapper .wrap .zc-info .into .phone .num {
+    float: left;
+    border-right: 1px solid #ece2e2;
+    height: 41px;
+    width: 41px;
+    text-align: center;
+    line-height: 41px;
+    cursor: pointer;
+}
+
+.wrapper .wrap .zc-info .into .phone input {
+    float: left;
+    width: 266px;
+    height: 41px;
+    border: none;
+    padding-left: 10px;
+    color: #9d9d9d;
+}
+
+.wrapper .wrap .zc-info .into .phone-tips {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper .wrap .zc-info .into .phone-tips span:nth-of-type(1) {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    background-color: #ff6f3d;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 15px;
+}
+
+.wrapper .wrap .zc-info .into .phone-tips span:nth-of-type(2) {
+    font-size: 14px;
+    color: #f66;
+}
+
+.wrapper .wrap .zc-info .into button {
+    display: block;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    background-color: #ff6700;
+    color: white;
+    border: none;
+}
+
+.wrapper .wrap .zc-info .into button:hover {
+    opacity: 0.5;
+}
+
+.wrapper .wrap .zc-info .into .agree {
+    text-align: center;
+    font-size: 14px;
+    color: #9d9d9d;
+    margin-top: 65px;
+    cursor: pointer;
+}
+
+.wrapper .wrap .zc-info .into .agree a {
+    color: #333;
+    font-weight: bold;
+}
+
+.wrapper .wrap .zc-bottom {
+    width: 854px;
+    height: 80px;
+}
+
+.wrapper .wrap .zc-bottom .zc-bo-nav {
+    width: 300px;
+    margin: auto;
+}
+
+.wrapper .wrap .zc-bottom .zc-bo-nav ul li {
+    float: left;
+}
+
+.wrapper .wrap .zc-bottom .zc-bo-nav ul li a {
+    color: #787878;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.wrapper .wrap .zc-bottom .zc-bo-nav ul li a:hover {
+    color: black;
+}
+
+.wrapper .wrap .zc-bottom p {
+    clear: both;
+    height: 30px;
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+.wrapper .wrap .zc-bottom p a {
+    display: inline-block;
+    color: #9d9d9d;
+}
+
+.wrapper .wrap .zc-bottom p a img {
+    display: inline-block;
+}

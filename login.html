@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/login.js" type="module"></script>
+    <script src="js/layer/layer.js"></script>
+    <!-- <script src="../js/reg2.js" type="module"></script> -->
+    <style>
+        .tabs-content>.content.active {
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+        }
+
+        @-webkit-keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .tabs dd>a,
+        .tabs .tab-title>a {
+            display: block;
+            background-color: #efefef00;
+            color: rgb(182, 162, 162);
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            outline: none;
+
+            font-weight: bold;
+
+        }
+
+        .tabs dd.active>a,
+        .tabs .tab-title.active>a {
+            background-color: #fff;
+            color: #222;
+            border-bottom: 5px solid burlywood;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <script src="js/cookie.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/font_2609659_znf6313hlj/iconfont.css">
+    <script src="js/layer/layer.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="logn-pic">
+                <img src="./images/banner.a0e6fbf0.jpg" alt="">
+            </div>
+            <div class="logn-text">
+                <div class="zc-head">
+                    <div class="zc-logo">
+                        <a href="xiaomi.html"> <img src="./images/logo.png" alt=""></a>
+                        <span>小米账号</span>
+                    </div>
+                    <div class="zc-nav-r">
+                        <ul>
+                            <li><a href="">用户协议</a></li>
+                            <li><a href="">隐私政策</a></li>
+                            <li><a href="">帮助中心</a></li><span>|</span>
+                            <li class="chinese"><a href="">中文简体</a>
+                                <!-- <div class="chinese-list">
+                        <span> 中文繁体</span>
+                        <span>English</span>
+                        </ul>
+                    </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="zc-middle">
+                    <div class="ban-xing">
+                        <div class="zc-card">
+                            <div class="code">
+                                <span class="iconfont icon-iconfonterweima">&#xe640;</span>
+                            </div>
+                            <div class="zc-inner">
+                                <ul class="tabs" data-tab>
+                                    <li class="tab-title active"><a href="#home">登录</a></li>
+                                    <li class="tab-title"><a href="#menu1">注册</a></li>
+                                </ul>
+                                <div class="tabs-content">
+                                    <div class="content active" id="home">
+                                        <!-- 登录 -->
+                                        <div class="inner-bottom">
+
+                                            <input type="text" name="username" placeholder="邮箱/手机号/小米ID" id="phone">
+                                            <p class="logntips">请输入账号</p>
+                                            <div class="pwd">
+                                                <input type="password" placeholder="密码" id="password">
+                                                <div class="eye">
+                                                    <span class="iconfont icon-Eyesclosed">&#xe61a;</span>
+                                                    <span class="iconfont icon-yanjing-tianchong">&#xe60d;</span>
+                                                </div>
+                                            </div>
+                                            <p class="logntips">请输入登录密码</p>
+                                            <button type="submit" id="logn">登录</button>
+                                            <label>
+                                                <input type="checkbox" name="rememberusername"
+                                                    style="width: 30px;height: 30px;">记住用户名
+                                            </label>
+                                            <div class="forget">
+                                                <a href="">忘记密码？</a>
+                                                <a href="">手机号登录</a>
+                                            </div>
+                                            <p>其他方式登录</p>
+                                            <div class="method">
+                                                <a href=""><img src="./images/qq.png" alt=""></a>
+                                                <a href=""><img src="./images/wb-1.png" alt=""></a>
+                                                <a href=""><img src="./images/zfb.png" alt=""></a>
+                                                <a href=""><img src="./images/wx-1.png" alt=""></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="content" id="menu1">
+                                        <!-- 注册 -->
+                                        <div class="inner-bottom">
+                                            <form action="./php/register.php" method="POST">
+                                                <div class="box-big">
+                                                    <h3>国家/地区</h3>
+                                                    <div class="area">
+                                                        <p>中国</p>
+                                                        <span>v</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-big">
+
+                                                    <div class="phone">
+                                                        <div class="num">
+                                                            <h3>手机号码</h3>
+                                                            <p>+86</p>
+                                                        </div>
+                                                        <input type="text" placeholder="手机号" id="regphone"
+                                                            name="phoneNumber">
+                                                    </div>
+                                                </div>
+                                                <div class="box-big">
+                                                    <input class="info-code" type="password" placeholder="密码"
+                                                        id="regpwd">
+                                                    <button class="get-code" type="text">请输入密码</button>
+                                                </div>
+                                                <button type="submit" id="reg">注册</button>
+                                                <div class="forget">
+                                                    <a href="">忘记密码？</a>
+
+                                                </div>
+                                                <div class="agree">
+                                                    已阅读并同意：小米<a href="">用户协议</a>
+                                                    和<a href="">隐私政策</a>
+                                                </div>
+                                                <p class="otherway">其他方式登录</p>
+                                                <div class="method">
+                                                    <a href=""><img src="./images/qq.png" alt=""></a>
+                                                    <a href=""><img src="./images/wb-1.png" alt=""></a>
+                                                    <a href=""><img src="./images/zfb.png" alt=""></a>
+                                                    <a href=""><img src="./images/wx-1.png" alt=""></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="mi-copyright">小米公司版权所有-京ICP备10046444-
+                            <a href="">京公网安备11010802020134号</a>
+                            -京ICP证110507号</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+        })
+    </script>
+</body>
+
+</html>

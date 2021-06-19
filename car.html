@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/car.js" type="module"></script>
+    <script src="js/cookie.js"></script>
+    <link rel="stylesheet" href="./css/car.css">
+    <link rel="stylesheet" href="./style/font_2529239_vi4ga2h3b2/iconfont.css">
+</head>
+
+<body>
+    <!-- 购物车头部 -->
+    <div class="car-header">
+        <div class="container">
+            <div class="header-logo">
+                <a href="./xiaomi.html" title="小米官网">
+                    小米官网
+
+                </a>
+            </div>
+            <div class="header-title">
+                <h2>我的购物车</h2>
+                <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="topbar-info">
+                <a href="./login.html" class="log">登录</a>
+                <span>|</span>
+                <a href="./register.html" class="reg">注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- 主要内容 -->
+    <div class="page-main">
+        <div class="container">
+            <div class="cart-warp">
+                <div class="cart-goods-list">
+                    <div class="list-head">
+                        <div class="col-check">
+                            <i class="icon-checkbox">
+                                <div class="p-check">
+                                    <input type="checkbox">
+                                </div>
+                            </i>全选
+                        </div>
+                        <div class="col-img"></div>
+                        <div class="col-name">商品名称</div>
+                        <div class="col-price">单价</div>
+                        <div class="col-num">数量</div>
+                        <div class="col-total">小计</div>
+                        <div class="col-action">操作</div>
+                    </div>
+                    <div class="list-big">
+                        <!-- <div class="list-body">
+                            <div class="col-check">
+                                <i class="icon-checkbox">√</i>
+                            </div>
+                            <div class="col-img">
+                                <a href=""><img src="./images/redmi-small-1.jpg" alt=""></a>
+                            </div>
+                            <div class="col-name">
+                                <div class="tags"></div>
+                                <h3>
+                                    <a href="">Redmi 9A 4GB +64GB 砂石黑</a>
+                                </h3>
+                            </div>
+                            <div class="col-price">
+                                599元
+                                <p class="pre-info"></p>
+                            </div>
+                            <div class="col-num">
+                                <div class="change-goods-num">
+                                    <a href=""><i>-</i></a>
+                                    <input class="goods-num-1" type="text" name="" id="" value="1">
+                                    <a href=""><i>+</i></a>
+                                </div>
+                            </div>
+                            <div class="col-total">
+                                599元
+                                <p class="pre-info"></p>
+                            </div>
+                            <div class="col-action">
+                                <a href="" title="删除">
+                                    <i>X</i>
+                                </a>
+                            </div>
+        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart-bar">
+                <div class="section-left">
+                    <a href="" class="back-shopping">继续购物</a>
+                    <span class="cart-total totalNum">
+                        共<i>1</i>件商品，已选择<i>0</i>
+                    </span>
+                </div>
+                <span class="total-price totalPrice">
+                    合计：
+                    <em></em>
+                    元
+                    <a href="" class="btn-disable">去结算</a>
+                </span>
+                <div class="no-select-tip">
+                    请勾选需要结算的商品
+                    <i class="arrow-a"></i>
+                    <i class="arrow-b"></i>
+                </div>
+            </div>
+            <!-- 买购物车中商品的人还买了 -->
+            <div class="others">
+                <h2>
+                    <span>
+                        买购物车中商品的人还买了
+                    </span>
+                </h2>
+                <div class="others-list">
+                    <ul>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <img src="./images/others-1.jpg" alt="">
+                                <div class="o-l-name">小米11 Ultra</div>
+                                <div class="o-l-price">5999元</div>
+                                <div class="o-l-tips">4.4万人好评</div>
+                            </a>
+                            <div class="o-l-action"><a>加入购物车</a>
+                                <div class="o-l-notice">成功加入购物车</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer-top>
+        <div class="container">
+            <div class="footer-service">
+                <ul>
+                    <li><a href="#"><img src="./images/set.png" alt=""><img src="./images/set-1.png" alt=""></a></li>
+                    <span>|</span>
+                    <li><a href="#"><img src="./images/7.png" alt=""><img src="./images/7-1.png" alt=""></li>
+                    </a><span>|</span>
+                    <li><a href="#"><img src="./images/15.png" alt=""><img src="./images/15-1.png" alt=""></li>
+                    </a><span>|</span>
+                    <li><a href="#"><img src="./images/baoyou.png" alt=""><img src="./images/baoyou-1.png" alt="">
+                    </li></a><span>|</span>
+                    <li><a href="#"><img src="./images/wangdian.png" alt=""><img src="./images/wangdian-1.png" alt="">
+                    </li></a>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <div class="links-l">
+                    <ul>
+                        <li>帮助中心</li>
+                        <li> <a href="#"> 账户管理</a></li>
+                        <li><a href="#">购物指南</a></li>
+                        <li><a href="#">订单操作</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li>服务支持</li>
+                        <li> <a href="#">售后政策</a></li>
+                        <li><a href="#">自助服务</a></li>
+                        <li><a href="#">相关下载</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li>线下门店</li>
+                        <li> <a href="#">小米之家</a></li>
+                        <li><a href="#">服务网点</a></li>
+                        <li><a href="#">授权体验店</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li>关于小米</li>
+                        <li> <a href="#">了解小米</a></li>
+                        <li><a href="#">加入小米</a></li>
+                        <li><a href="#">投资者关系</a></li>
+                        <li><a href="#">企业社会责任</a></li>
+                        <li><a href="#">廉洁举报</a></li>
+                    </ul>
+                    <ul>
+                        <li>关注我们</li>
+                        <li> <a href="#">新浪微博</a></li>
+                        <li><a href="#">官方微信</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">公益基金会</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li>特色服务</li>
+                        <li> <a href="#">F码通道</a></li>
+
+                        <li><a href="#">礼物码</a></li>
+                        <li><a href="#">防伪查询</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="links-r">
+                    <p>400-100-5678</p>
+                    <p>8:00-18:00 (仅收市话费)</p>
+                    <div class="kefu">
+                        <a href="#"><img src="./images/kefu.png" alt=""><img src="./images/kefu-1.png" alt=""></a>
+                    </div>
+                    <div class="guanzhu">
+                        <span>关注小米：</span>
+                        <a href="#"><img src="./images/wb.png" alt=""></a>
+                        <a href="#"><img src="./images/wx.png" alt="" class="wx">
+                            <img src="./images/mi-code.png" alt="" class="mi-code"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer-top>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="logo-bottom">小米官网</div>
+            <div class="info-text">
+                <p class="text-top">
+                    <a href="#">小米商城</a><span>|</span>
+                    <a href="#">MIUI</a><span>|</span>
+                    <a href="#">米家</a><span>|</span>
+                    <a href="#">米聊</a><span>|</span>
+                    <a href="#">多看</a><span>|</span>
+                    <a href="#">游戏</a><span>|</span>
+                    <a href="#">政务服务</a><span>|</span>
+                    <a href="#">小米天猫店</a><span>|</span>
+                    <a href="#">小米集团隐私政策</a><span>|</span>
+                    <a href="#">小米公司儿童信息保护规则</a><span>|</span>
+                    <a href="#">小米商城隐私政策</a><span>|</span>
+                    <a href="#">小米用户协议</a><span>|</span>
+                    <a href="#">问题反馈</a><span>|</span>
+                    <a href="#">Select Location</a>
+
+                </p>
+                <p class="text-top">
+                    <a href="#">北京互联网法院法律服务工作站</a><span>|</span>
+                    <a href="#">中国消费协会</a><span>|</span>
+                    <a href="#">北京消费协会</a>
+                </p>
+                <p>
+                    ©
+                    <a href="javascript:;">mi.com</a> 京ICP证110507号
+                    <a href="#">京ICP备10046444号</a>
+                    <a href="#" target="_blank">京公网安备11010802020134号</a>
+                    <a href="#" target="_blank">京网文[2020]0276-042号</a><br>
+                    <a href="#" target="_blank">（京）网械平台备字（2018）第00005号</a>
+                    <a href="#" target="_blank">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                    <a href="#" target="_blank">营业执照</a>
+                    <a href="#" target="_blank">医疗器械质量公告</a> <br>
+                    <a href="#" target="_blank">增值电信业务许可证</a>&nbsp;网络食品经营备案 京食药网食备202010048 &nbsp;
+                    <a href="#">食品经营许可证</a> <br>
+                    违法和不良信息举报电话：171-5104-4404&nbsp;<a href="#"
+                        target="_blank">知识产权侵权投诉</a>&nbsp;本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+            </div>
+            <div class="info-links">
+                <a href="#"><img src="./images/truste.png" alt=""></a>
+                <a href="#"><img src="./images/cheng.png" alt=""></a>
+                <a href="#"><img src="./images/xing.png" alt=""></a>
+                <a href="#"><img src="./images/jing-ying.png" alt=""></a>
+                <a href="#"><img src="./images/safe.png" alt=""></a>
+            </div>
+        </div>
+        <div class="bottom-text
+    ">探索黑科技，小米为发烧而生</div>
+    </div>
+    <div class="nav-right">
+        <a href=""><img src="./images/nav-r-1.png" alt=""><img src="./images/nav-r-1.1.png" alt="">
+            <span>手机APP</span></a>
+        <a href=""><img src="./images/nav-r-2.png" alt=""><img src="./images/nav-r-2.2.png" alt="">
+            <span>个人中心</span></a>
+        <a href=""><img src="./images/nav-r-3.png" alt=""><img src="./images/nav-r-3.1.png" alt="">
+            <span>售后服务</span></a>
+        <a href=""><img src="./images/nav-r-4.png" alt=""><img src="./images/nnav-r-4.1.png" alt="">
+            <span>人工服务</span></a>
+        <a href=""><img src="./images/nav-r-5.png" alt=""><img src="./images/nav-r-5.1.png" alt="">
+            <span>购物车</span></a>
+        <a href=""><img src="./images/nav-r-6.png" alt=""><img src="./images/nav-r-6.1.png" alt="">
+            <span>回顶部</span></a>
+    </div>
+</body>
+
+</html>
