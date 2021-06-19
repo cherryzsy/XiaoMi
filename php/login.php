@@ -3,7 +3,7 @@
   
     include('./library/conn.php');
 header('content-type:text/html;charset=utf8');
-$link = mysqli_connect('localhost','root','root','project');
+$link = mysqli_connect('localhost','root','root','project1');
     $phone = $_REQUEST['phone'];
     $password = $_REQUEST['password'];
 
