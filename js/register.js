@@ -6,9 +6,9 @@ $("#reg").on("click", function () {
   var phone = document.querySelector("[name='phoneNumber']").value;
   console.log(phone2);
   console.log(password2);
-  var reg = /^[a-zA-Z][a-zA-Z0-9]{2,7}$/;
+  var reg = /^\d{11}$/;
   if (!reg.test(phone)) {
-    alert("用户名：字母开头，字母、数字组成，3~8位");
+    alert("输入正确的手机号码");
     return false;
   }
   $.ajax({
@@ -30,7 +30,7 @@ $("#reg").on("click", function () {
         alert("注册成功");
 
         // layer.close(loadindex);
-        location.href = "../login.html";
+        location.href = "login.html";
       } else {
         // $('.login-fail').text('注册成功');
         alert("该手机已注册,请登录");
